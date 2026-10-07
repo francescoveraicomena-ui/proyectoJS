@@ -3,7 +3,7 @@ const sueldoColaboradores = [1000, 1100, 1200, 1300, 1350, 1400, 1450, 1500, 155
 const porcentajeAguinaldo = 0.20;
 
 for (let i = 0; i < sueldoColaboradores.length; i++) {
-
+    // Calcular el aguinaldo y el total a pagar para cada colaborador
     let sueldoBase = sueldoColaboradores[i];
 
     let aguinaldo = sueldoBase * porcentajeAguinaldo;
@@ -11,6 +11,6 @@ for (let i = 0; i < sueldoColaboradores.length; i++) {
     let totalPagar = sueldoBase + aguinaldo;
 
     console.log("sueldo Base:" , sueldoBase);
-    console.log("aguinaldo:" , aguinaldo);
-    console.log("total a Pagar:" , totalPagar);
+    console.log("aguinaldo:" , aguinaldo.toFixed(2));
+    console.log("total a Pagar:" , totalPagar.toFixed(2));
 }
